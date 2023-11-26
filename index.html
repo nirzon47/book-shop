@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Book-App</title>
+
+		<!-- Tailwind -->
+		<link rel="stylesheet" href="assets/styles/output.css" />
+
+		<!-- Fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/d521bbec8a.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header
+			class="flex items-center justify-between px-6 py-4 outline outline-black outline-1 rounded-br-md rounded-bl-md"
+		>
+			<!-- Left -->
+			<div class="flex items-center gap-4">
+				<i class="text-xl text-indigo-600 fa-solid fa-book-open"></i>
+				<h1 class="text-2xl font-medium">Book</h1>
+			</div>
+
+			<!-- Right -->
+			<div class="flex items-center gap-4">
+				<input
+					type="checkbox"
+					value="dark"
+					class="toggle theme-controller bg-amber-300 border-sky-400 [--tglbg:theme(colors.sky.500)] checked:bg-blue-300 checked:border-blue-800 checked:[--tglbg:theme(colors.blue.900)] row-start-1 col-start-1 col-span-2"
+				/>
+				<i class="text-xl fa-solid fa-bars"></i>
+			</div>
+		</header>
+
+		<!-- Categories -->
+		<aside class="h-56 px-6 mt-10 overflow-y-scroll">
+			<h2 class="mb-4 text-[1rem] font-semibold text-indigo-600">
+				ALL CATEGORIES
+			</h2>
+
+			<ul class="flex flex-col gap-4 text-zinc-600">
+				<li>Audio Fiction</li>
+				<li>Hardcover Nonfiction</li>
+				<li>Combined Print and E-Book Nonfiction</li>
+				<li>Audio Nonfiction</li>
+				<li>Trade Fiction Paperback</li>
+				<li>Picture Books</li>
+				<li>Business Books</li>
+				<li>Hardcover Fiction</li>
+				<li>Series Books</li>
+				<li>Graphic Books and Manga</li>
+				<li>Advice How-To and Miscellaneous</li>
+				<li>Young Adult Hardcover</li>
+				<li>Young Adult Paperback Monthly</li>
+				<li>Middle Grade Paperback Monthly</li>
+				<li>Children Middle Grade Hardcover</li>
+				<li>Mass Market Monthly</li>
+				<li>Paperback Nonfiction</li>
+			</ul>
+		</aside>
+
+		<!-- Main -->
+		<main class="px-6 mt-6">
+			<h2 class="text-3xl font-bold">
+				Best Sellers <span class="text-indigo-600">Books</span>
+			</h2>
+		</main>
+	</body>
+</html>
