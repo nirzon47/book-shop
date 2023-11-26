@@ -1,5 +1,6 @@
 // DOM Elements
 const listElement = document.getElementById('list')
+const renderElement = document.getElementById('render')
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
@@ -39,7 +40,26 @@ const fetchCategories = async () => {
 }
 
 const renderBestSellers = () => {
+	renderElement.innerHTML = ''
+	const fragment = document.createDocumentFragment()
+
 	books.forEach((book) => {
-		console.log(book.books[0])
+		const div = document.createElement('div')
+		div.innerHTML = `
+	            <div>
+					<h3 class="book-title">${book.list_name}</h3>
+					<img
+						class="book-image"
+						src="${book.books[0].book_image}"
+						alt="${book.books[0].title}"
+					/>
+					<h4 class="pt-4 font-bold uppercase">${book.books[0].title}</h4>
+					<p class="author">${book.books[0].author}</p>
+					<button class="cart-button">SEE MORE</button>
+				</div>`
+
+		fragment.appendChild(div)
 	})
+
+	renderElement.appendChild(fragment)
 }
