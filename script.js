@@ -33,7 +33,7 @@ const fetchCategories = async () => {
 
 	data.forEach((item) => {
 		const option = document.createElement('option')
-		option.value = item
+		option.value = item.list_name
 		option.textContent = item.list_name
 		listElement.appendChild(option)
 	})
@@ -45,18 +45,37 @@ const renderBestSellers = () => {
 
 	books.forEach((book) => {
 		const div = document.createElement('div')
-		div.innerHTML = `
-	            <div>
-					<h3 class="book-title">${book.list_name}</h3>
-					<img
-						class="book-image"
-						src="${book.books[0].book_image}"
-						alt="${book.books[0].title}"
-					/>
-					<h4 class="pt-4 font-bold uppercase">${book.books[0].title}</h4>
-					<p class="author">${book.books[0].author}</p>
-					<button class="cart-button">SEE MORE</button>
-				</div>`
+
+		const h3 = document.createElement('h3')
+		h3.classList.add('book-title')
+		h3.textContent = book.list_name
+
+		div.appendChild(h3)
+
+		const innerDiv = document.createElement('div')
+		innerDiv.classList.add('book-list')
+
+		book.books.forEach((item) => {
+			const bookListDiv = document.createElement('div')
+			bookListDiv.classList.add('hidden')
+
+			bookListDiv.innerHTML = `
+                    
+                        <img
+                            class="book-image"
+                            src="${item.book_image}"
+                            alt="${item.title}"
+                        />
+                        <h4 class="pt-4 font-bold uppercase">${item.title}</h4>
+                        <p class="author">${item.author}</p>
+                        <button class="cart-button">SEE MORE</button>
+                    
+                        `
+
+			innerDiv.appendChild(bookListDiv)
+		})
+
+		div.appendChild(innerDiv)
 
 		fragment.appendChild(div)
 	})

@@ -16,6 +16,10 @@
 	}
 
 	.book-image {
-		@apply rounded-md outline outline-1 outline-black;
+		@apply object-cover rounded-md w-80 h-96 outline outline-1 outline-black;
+	}
+
+	.book-list {
+		@apply flex-row flex gap-4 justify-center md:justify-between [&>*:first-child]:inline-block md:[&>*:nth-child(2)]:inline-block md:[&>*:nth-child(3)]:inline-block lg:[&>*:nth-child(4)]:inline-block lg:[&>*:nth-child(5)]:inline-block;
 	}
 }
