@@ -1318,6 +1318,10 @@ html {
   margin-top: 1.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1340,6 +1344,10 @@ html {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .overflow-y-scroll {
@@ -1490,7 +1498,20 @@ html {
     display: grid;
   }
 
+  .lg\:h-\[80vh\] {
+    height: 80vh;
+  }
+
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lg\:overflow-hidden {
+    overflow: hidden;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
