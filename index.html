@@ -19,9 +19,7 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header
-			class="flex items-center justify-between px-6 py-4 outline outline-black outline-1 rounded-br-md rounded-bl-md"
-		>
+		<header class="header">
 			<!-- Left -->
 			<section class="flex items-center gap-4">
 				<i class="text-xl text-indigo-600 fa-solid fa-book-open"></i>
@@ -39,86 +37,90 @@
 			</section>
 		</header>
 
-		<!-- Categories -->
-		<aside class="h-56 px-6 mt-10 overflow-y-scroll">
-			<h2 class="mb-4 text-[1rem] font-semibold text-indigo-600">
-				ALL CATEGORIES
-			</h2>
+		<div class="lg:grid lg:grid-cols-12">
+			<!-- Categories -->
+			<aside
+				class="h-56 px-6 mt-10 overflow-y-scroll lg:col-span-3 md:h-[70vh]"
+			>
+				<h2 class="mb-4 text-[1rem] font-semibold text-indigo-600">
+					ALL CATEGORIES
+				</h2>
 
-			<ul
-				class="flex flex-col gap-4 text-zinc-600 text-[0.9rem]"
-				id="list"
-			></ul>
-		</aside>
+				<ul
+					class="flex flex-col gap-4 text-zinc-500 text-[0.9rem] md:text-lg md:gap-6"
+					id="list"
+				></ul>
+			</aside>
 
-		<!-- Main -->
-		<main class="px-6 mt-6">
-			<h2 class="text-2xl font-bold">
-				Best Sellers <span class="text-indigo-600">Books</span>
-			</h2>
+			<!-- Main -->
+			<main class="px-6 mt-6 lg:col-span-9">
+				<h2 class="text-2xl font-bold md:text-4xl">
+					Best Sellers <span class="text-indigo-600">Books</span>
+				</h2>
 
-			<section id="render" class="flex flex-col gap-4">
-				<div>
-					<h3 class="book-title">Advice How-To and Miscellaneous</h3>
-					<div class="book-list">
-						<div class="hidden">
-							<img
-								class="book-image"
-								src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg"
-								alt="ATOMIC HABITS"
-							/>
-							<h4 class="pt-4 font-bold uppercase">ATOMIC HABITS</h4>
-							<p class="author">James Clear</p>
-							<button class="cart-button">SEE MORE</button>
-						</div>
-						<div class="hidden">
-							<img
-								class="book-image"
-								src="https://storage.googleapis.com/du-prd/books/images/9780063226050.jpg"
-								alt="THE LOVE STORIES OF THE BIBLE SPEAK"
-							/>
-							<h4 class="pt-4 font-bold uppercase">
-								THE LOVE STORIES OF THE BIBLE SPEAK
-							</h4>
-							<p class="author">Shannon Bream</p>
-							<button class="cart-button">SEE MORE</button>
-						</div>
-						<div class="hidden">
-							<img
-								class="book-image"
-								src="https://storage.googleapis.com/du-prd/books/images/9781984826398.jpg"
-								alt="SWEET ENOUGH"
-							/>
-							<h4 class="pt-4 font-bold uppercase">SWEET ENOUGH</h4>
-							<p class="author">Alison Roman</p>
-							<button class="cart-button">SEE MORE</button>
-						</div>
-						<div class="hidden">
-							<img
-								class="book-image"
-								src="https://storage.googleapis.com/du-prd/books/images/9780593652886.jpg"
-								alt="THE CREATIVE ACT"
-							/>
-							<h4 class="pt-4 font-bold uppercase">THE CREATIVE ACT</h4>
-							<p class="author">Rick Rubin with Neil Strauss</p>
-							<button class="cart-button">SEE MORE</button>
-						</div>
-						<div class="hidden">
-							<img
-								class="book-image"
-								src="https://storage.googleapis.com/du-prd/books/images/9780062976581.jpg"
-								alt="THE BOY, THE MOLE, THE FOX AND THE HORSE"
-							/>
-							<h4 class="pt-4 font-bold uppercase">
-								THE BOY, THE MOLE, THE FOX AND THE HORSE
-							</h4>
-							<p class="author">Charlie Mackesy</p>
-							<button class="cart-button">SEE MORE</button>
+				<section id="render" class="flex flex-col gap-4">
+					<div>
+						<h3 class="book-title">Advice How-To and Miscellaneous</h3>
+						<div class="book-list">
+							<div class="hidden">
+								<img
+									class="book-image"
+									src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg"
+									alt="ATOMIC HABITS"
+								/>
+								<h4 class="pt-4 font-bold uppercase">ATOMIC HABITS</h4>
+								<p class="author">James Clear</p>
+								<button class="cart-button">SEE MORE</button>
+							</div>
+							<div class="hidden">
+								<img
+									class="book-image"
+									src="https://storage.googleapis.com/du-prd/books/images/9780063226050.jpg"
+									alt="THE LOVE STORIES OF THE BIBLE SPEAK"
+								/>
+								<h4 class="pt-4 font-bold uppercase">
+									THE LOVE STORIES OF THE BIBLE SPEAK
+								</h4>
+								<p class="author">Shannon Bream</p>
+								<button class="cart-button">SEE MORE</button>
+							</div>
+							<div class="hidden">
+								<img
+									class="book-image"
+									src="https://storage.googleapis.com/du-prd/books/images/9781984826398.jpg"
+									alt="SWEET ENOUGH"
+								/>
+								<h4 class="pt-4 font-bold uppercase">SWEET ENOUGH</h4>
+								<p class="author">Alison Roman</p>
+								<button class="cart-button">SEE MORE</button>
+							</div>
+							<div class="hidden">
+								<img
+									class="book-image"
+									src="https://storage.googleapis.com/du-prd/books/images/9780593652886.jpg"
+									alt="THE CREATIVE ACT"
+								/>
+								<h4 class="pt-4 font-bold uppercase">THE CREATIVE ACT</h4>
+								<p class="author">Rick Rubin with Neil Strauss</p>
+								<button class="cart-button">SEE MORE</button>
+							</div>
+							<div class="hidden">
+								<img
+									class="book-image"
+									src="https://storage.googleapis.com/du-prd/books/images/9780062976581.jpg"
+									alt="THE BOY, THE MOLE, THE FOX AND THE HORSE"
+								/>
+								<h4 class="pt-4 font-bold uppercase">
+									THE BOY, THE MOLE, THE FOX AND THE HORSE
+								</h4>
+								<p class="author">Charlie Mackesy</p>
+								<button class="cart-button">SEE MORE</button>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-		</main>
+				</section>
+			</main>
+		</div>
 
 		<footer class="p-4 mt-6 footer footer-center bg-base-300 text-base-content">
 			<aside>

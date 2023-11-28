@@ -12,14 +12,18 @@
 	}
 
 	.book-title {
-		@apply font-medium uppercase text-zinc-400 text-[0.9rem] py-4 text-center;
+		@apply font-medium uppercase text-zinc-400 text-[0.9rem] py-4 text-center md:text-left;
 	}
 
 	.book-image {
-		@apply object-cover rounded-md w-80 h-96 outline outline-1 outline-black;
+		@apply object-cover rounded-md w-80 h-96 outline outline-1 outline-black md:h-80;
 	}
 
 	.book-list {
 		@apply flex-row flex gap-4 justify-center md:justify-between [&>*:first-child]:inline-block md:[&>*:nth-child(2)]:inline-block md:[&>*:nth-child(3)]:inline-block lg:[&>*:nth-child(4)]:inline-block lg:[&>*:nth-child(5)]:inline-block;
+	}
+
+	.header {
+		@apply flex items-center justify-between px-6 py-4 outline outline-black outline-1 rounded-br-md rounded-bl-md;
 	}
 }

@@ -68,14 +68,17 @@ const renderBestSellers = () => {
                         />
                         <h4 class="pt-4 font-bold uppercase">${item.title}</h4>
                         <p class="author">${item.author}</p>
-                        <button class="cart-button">SEE MORE</button>
                     
                         `
 
 			innerDiv.appendChild(bookListDiv)
 		})
+		const button = document.createElement('button')
+		button.classList.add('cart-button')
+		button.innerText = 'SEE MORE'
 
 		div.appendChild(innerDiv)
+		div.appendChild(button)
 
 		fragment.appendChild(div)
 	})

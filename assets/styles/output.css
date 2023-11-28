@@ -1219,6 +1219,12 @@ html {
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .book-title {
+    text-align: left;
+  }
+}
+
 .book-image {
   height: 24rem;
   width: 20rem;
@@ -1228,6 +1234,12 @@ html {
   outline-style: solid;
   outline-width: 1px;
   outline-color: #000;
+}
+
+@media (min-width: 768px) {
+  .book-image {
+    height: 20rem;
+  }
 }
 
 .book-list {
@@ -1265,6 +1277,21 @@ html {
   .book-list>*:nth-child(5) {
     display: inline-block;
   }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #000;
 }
 
 .col-span-2 {
@@ -1311,24 +1338,12 @@ html {
   align-items: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .gap-4 {
   gap: 1rem;
 }
 
 .overflow-y-scroll {
   overflow-y: scroll;
-}
-
-.rounded-bl-md {
-  border-bottom-left-radius: 0.375rem;
-}
-
-.rounded-br-md {
-  border-bottom-right-radius: 0.375rem;
 }
 
 .border-sky-400 {
@@ -1353,11 +1368,6 @@ html {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pt-4 {
@@ -1408,21 +1418,9 @@ html {
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
-.text-zinc-600 {
+.text-zinc-500 {
   --tw-text-opacity: 1;
-  color: rgb(82 82 91 / var(--tw-text-opacity));
-}
-
-.outline {
-  outline-style: solid;
-}
-
-.outline-1 {
-  outline-width: 1px;
-}
-
-.outline-black {
-  outline-color: #000;
+  color: rgb(113 113 122 / var(--tw-text-opacity));
 }
 
 .\[--tglbg\:theme\(colors\.sky\.500\)\] {
@@ -1441,4 +1439,58 @@ html {
 
 .checked\:\[--tglbg\:theme\(colors\.blue\.900\)\]:checked {
   --tglbg: #1e3a8a;
+}
+
+@media (min-width: 768px) {
+  .md\:h-72 {
+    height: 18rem;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
+  }
+
+  .md\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .md\:h-\[80vh\] {
+    height: 80vh;
+  }
+
+  .md\:h-\[70vh\] {
+    height: 70vh;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
 }
