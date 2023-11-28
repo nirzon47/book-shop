@@ -35,6 +35,8 @@ const fetchCategories = async () => {
 		const option = document.createElement('option')
 		option.value = item.list_name
 		option.textContent = item.list_name
+		option.classList.add('option')
+
 		listElement.appendChild(option)
 	})
 }

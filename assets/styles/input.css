@@ -4,7 +4,7 @@
 
 @layer components {
 	.cart-button {
-		@apply block px-4 py-2 ml-auto font-semibold border border-indigo-600 rounded-full;
+		@apply block px-4 py-2 mt-4 ml-auto font-semibold duration-200 border border-indigo-600 rounded-full hover:bg-indigo-600 hover:text-white;
 	}
 
 	.author {
@@ -25,5 +25,9 @@
 
 	.header {
 		@apply flex items-center justify-between px-6 py-4 outline outline-black outline-1 rounded-br-md rounded-bl-md;
+	}
+
+	.option {
+		@apply duration-200 cursor-pointer hover:uppercase hover:font-semibold hover:text-indigo-600;
 	}
 }

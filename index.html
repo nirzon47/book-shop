@@ -33,7 +33,16 @@
 					value="dark"
 					class="toggle theme-controller bg-amber-300 border-sky-400 [--tglbg:theme(colors.sky.500)] checked:bg-blue-300 checked:border-blue-800 checked:[--tglbg:theme(colors.blue.900)] row-start-1 col-start-1 col-span-2"
 				/>
-				<i class="text-xl fa-solid fa-bars"></i>
+				<div class="md:hidden"><i class="text-xl fa-solid fa-bars"></i></div>
+
+				<button
+					class="items-center justify-between hidden h-10 px-6 text-sm text-white duration-200 bg-indigo-600 group rounded-2xl md:flex w-36 outline outline-1 outline-indigo-600 hover:bg-yellow-300 hover:text-black"
+				>
+					<span class="font-semibold">Sign Up</span>
+					<i
+						class="text-yellow-300 fa-solid fa-arrow-right group-hover:text-black"
+					></i>
+				</button>
 			</section>
 		</header>
 
@@ -122,10 +131,13 @@
 			</main>
 		</div>
 
-		<footer class="p-4 mt-6 footer footer-center bg-base-300 text-base-content">
+		<footer class="p-4 mt-8 footer footer-center bg-base-300 text-base-content">
 			<aside>
 				<p class="font-semibold">Made with ❤️ by Nirzon Karmakar</p>
 			</aside>
 		</footer>
+
+		<!-- Scrap Code -->
+		<li class="hidden option"></li>
 	</body>
 </html>
