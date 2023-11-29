@@ -35,9 +35,7 @@
 				/>
 				<div class="md:hidden"><i class="text-xl fa-solid fa-bars"></i></div>
 
-				<button
-					class="items-center justify-between hidden h-10 px-6 text-sm text-white duration-200 bg-indigo-600 group rounded-2xl md:flex w-36 outline outline-1 outline-indigo-600 hover:bg-yellow-300 hover:text-black"
-				>
+				<button class="sign-up-btn group">
 					<span class="font-semibold">Sign Up</span>
 					<i
 						class="text-yellow-300 fa-solid fa-arrow-right group-hover:text-black"
@@ -63,7 +61,7 @@
 
 			<!-- Main -->
 			<main class="px-6 mt-6 lg:col-span-9">
-				<h2 class="text-2xl font-bold md:text-4xl lg:text-5xl">
+				<h2 class="text-2xl font-bold md:text-4xl lg:text-5xl lg:mb-12">
 					Best Sellers <span class="text-indigo-600">Books</span>
 				</h2>
 
@@ -71,6 +69,20 @@
 					<div>
 						<h3 class="book-title">Advice How-To and Miscellaneous</h3>
 						<div class="book-list">
+							<div class="relative hidden duration-200 group">
+								<img
+									class="book-image group-hover:brightness-90"
+									src="https://storage.googleapis.com/du-prd/books/images/9781984826398.jpg"
+									alt="SWEET ENOUGH"
+								/>
+								<h4 class="pt-4 font-bold uppercase">SWEET ENOUGH</h4>
+								<p class="author">Alison Roman</p>
+								<button
+									class="hidden absolute w-full bg-yellow-300 h-14 bottom-[5.75rem] group-hover:inline-block rounded-br-md rounded-bl-md"
+								>
+									Quick Look
+								</button>
+							</div>
 							<div class="hidden">
 								<img
 									class="book-image"
@@ -79,7 +91,6 @@
 								/>
 								<h4 class="pt-4 font-bold uppercase">ATOMIC HABITS</h4>
 								<p class="author">James Clear</p>
-								<button class="cart-button">SEE MORE</button>
 							</div>
 							<div class="hidden">
 								<img
@@ -91,17 +102,6 @@
 									THE LOVE STORIES OF THE BIBLE SPEAK
 								</h4>
 								<p class="author">Shannon Bream</p>
-								<button class="cart-button">SEE MORE</button>
-							</div>
-							<div class="hidden">
-								<img
-									class="book-image"
-									src="https://storage.googleapis.com/du-prd/books/images/9781984826398.jpg"
-									alt="SWEET ENOUGH"
-								/>
-								<h4 class="pt-4 font-bold uppercase">SWEET ENOUGH</h4>
-								<p class="author">Alison Roman</p>
-								<button class="cart-button">SEE MORE</button>
 							</div>
 							<div class="hidden">
 								<img
@@ -111,21 +111,20 @@
 								/>
 								<h4 class="pt-4 font-bold uppercase">THE CREATIVE ACT</h4>
 								<p class="author">Rick Rubin with Neil Strauss</p>
-								<button class="cart-button">SEE MORE</button>
 							</div>
 							<div class="hidden">
 								<img
 									class="book-image"
-									src="https://storage.googleapis.com/du-prd/books/images/9780062976581.jpg"
-									alt="THE BOY, THE MOLE, THE FOX AND THE HORSE"
+									src="https://storage.googleapis.com/du-prd/books/images/9780593489307.jpg"
+									alt="LIFE WORTH LIVING"
 								/>
-								<h4 class="pt-4 font-bold uppercase">
-									THE BOY, THE MOLE, THE FOX AND THE HORSE
-								</h4>
-								<p class="author">Charlie Mackesy</p>
-								<button class="cart-button">SEE MORE</button>
+								<h4 class="pt-4 font-bold uppercase">LIFE WORTH LIVING</h4>
+								<p class="author">
+									Miroslav Volf, Matthew Croasmun and Ryan McAnnally-Linz
+								</p>
 							</div>
 						</div>
+						<button class="cart-button">SEE MORE</button>
 					</div>
 				</section>
 			</main>

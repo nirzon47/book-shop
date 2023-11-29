@@ -4,8 +4,8 @@ const renderElement = document.getElementById('render')
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
-	fetchCategories()
-	fetchBooks()
+	// fetchCategories()
+	// fetchBooks()
 })
 
 // Variables
